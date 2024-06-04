@@ -638,3 +638,202 @@ iframe.h5peditor-semi-fullscreen {
     transform: rotate(360deg);
   }
 }
+
+/* General RTL Styles  */
+
+.h5p-dir-rtl{
+  direction: rtl;
+}
+.h5p-dir-rtl .h5p-question-buttons button::before,
+.h5p-dir-rtl .questionset-results  button::before {
+  padding: 5px;
+}
+.h5p-dir-rtl .h5p-reuse-dialog .h5p-inner {
+  left: 0%;
+}
+.h5p-dir-rtl .h5p-reuse-dialog .h5p-inner #reuse-dialog-header{
+  text-align: center;
+}
+.h5p-dir-rtl .joubel-speech-bubble .joubel-speech-bubble-inner{
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-container .h5p-joubelui-progressbar .h5p-joubelui-progressbar-background{
+  right: 0;
+  left: auto;
+}
+
+/*  RTL SCOREBAR  */
+.h5p-dir-rtl .h5p-joubelui-score-bar .h5p-joubelui-score-bar-progress-wrapper {
+  margin-right: 0em;
+  margin-left: 2.5em;
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+.h5p-dir-rtl .h5p-joubelui-score-bar .h5p-joubelui-score-bar-progress {
+  right: 0;
+  left: auto;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.h5p-dir-rtl .h5p-joubelui-score-bar .h5p-joubelui-score-bar-star {
+  left: 0;
+  right: auto;
+}
+
+/* General  RTL Styles For H5P Question */
+.h5p-dir-rtl .h5p-question .h5p-question-image {
+  text-align: right;
+  padding-right: 2em;
+}
+.h5p-dir-rtl .h5p-question .h5p-question-image-scalable:before {
+  left: 0.7em;
+  right: auto;
+}
+
+/*  RTL Styles For True False Question */
+.h5p-dir-rtl .h5p-true-false-answer{
+  padding: 0.5em 0.5em 0.5em 3.5em;
+}
+.h5p-dir-rtl .h5p-true-false-answer::after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+}
+
+/* RTL Styles For Single Choice Question */
+.h5p-dir-rtl li.h5p-sc-alternative .h5p-sc-status{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+} 
+.h5p-dir-rtl .h5p-single-choice-set .h5p-sc-solution-view .h5p-sc-close-solution-view {
+  transform: rotate(180deg);
+  top: 25%;
+  right: 0;
+  left: auto;
+}
+
+/* RTL Styles For Multiple Choice Question */
+.h5p-dir-rtl .h5p-multichoice .h5p-alternative-container{
+ text-align: right;
+ text-indent: 0em;
+ padding-right: 1.25em;
+}
+
+.h5p-dir-rtl .h5p-multichoice .h5p-answer .h5p-alternative-container:before{
+  right: 0.5em;
+  left: auto;
+}
+
+.h5p-dir-rtl .h5p-multichoice .h5p-solution-icon-radio,
+.h5p-dir-rtl .h5p-multichoice .h5p-solution-icon-checkbox {
+  right: auto ;
+  left: 0.75em;
+  direction: ltr;
+}
+
+.h5p-dir-rtl  .h5p-multichoice .h5p-answer-icon {
+  right: 0.75em;
+  left: auto;
+  direction: ltr;
+}
+
+/*  RTL Styles For Multi-Media Choice  */
+.h5p-dir-rtl .h5p-multi-media-choice .h5p-multi-media-choice-list-item{
+  position: relative !important;
+  top: 0 !important;
+  right: 0;
+  float: right;
+  display: inline-block;
+  margin-left: 10px;
+}
+.h5p-dir-rtl .h5p-multi-media-choice .h5p-multi-media-choice-option-list{
+  height: auto !important;
+  padding-right: 0;
+}
+
+/* RTL Styles For Fill in Blanks*/
+
+.h5p-dir-rtl .h5p-blanks .h5p-correct:after, .h5p-dir-rtl .h5p-blanks .h5p-wrong:after{
+  left: 0.5em;
+  right: auto;
+}
+
+.h5p-dir-rtl .h5p-blanks .h5p-correct-answer{
+  margin-right: 0.5em;
+  margin-left: 0;
+}
+
+/* RTL Styles For Mark the Words*/
+
+.h5p-dir-rtl .h5p-mark-the-words .h5p-question-minus-one,
+.h5p-dir-rtl .h5p-mark-the-words .h5p-question-plus-one {
+  left: -1.615384615em;
+  right: auto;
+}
+
+/* RTL Styles For Drag Words*/
+.h5p-dir-rtl .h5p-drag-task .h5p-drag-correct-feedback, 
+.h5p-dir-rtl .h5p-drag-task .h5p-drag-wrong-feedback{
+  padding: 0.1em 0.1em 0.1em 1.65em;
+}
+.h5p-dir-rtl .h5p-drag-task .h5p-drag-correct-feedback:before, 
+.h5p-dir-rtl .h5p-drag-task .h5p-drag-wrong-feedback:before{
+  left: 0.5em;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-drag-task  .h5p-drag-dropzone-container {
+  direction: ltr;
+}
+.h5p-dir-rtl .h5p-drag-task .h5p-drag-show-solution-container{
+  margin-right: 0.5em;
+}
+.h5p-dir-rtl .h5p-drag-text .h5p-drag-wide-screen {
+  float: left;
+}
+.h5p-dir-rtl .h5p-drag-text .h5p-drag-droppable-words{
+  margin-right: 0 !important;
+}
+
+/* RTL Styles For Drag and Drops*/
+.h5p-dir-rtl .h5p-dragquestion .h5p-question-minus-one, 
+.h5p-dir-rtl .h5p-dragquestion .h5p-question-plus-one {
+  left: -0.3em;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-dragquestion .h5p-draggable.h5p-correct:after, 
+.h5p-dir-rtl .h5p-dragquestion .h5p-draggable.h5p-wrong:after{
+  left: -0.1em;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-dragquestion .h5p-dropped.h5p-wrong, 
+.h5p-dir-rtl .h5p-dragquestion .h5p-dropped.h5p-correct {
+  text-align: right;
+}
+
+/* RTL Styles For Question Set - Quiz*/
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-prev,
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-finish,
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-next {
+  float: left;
+}
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-prev,
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-next {
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-prev .h5p-tooltip,
+.h5p-dir-rtl .questionset .h5p-question .h5p-question-next .h5p-tooltip{
+  display: none;
+}
+
+/* RTL Styles For Arithmetic Quiz*/
+.h5p-dir-rtl  .h5p-baq-game .h5p-baq-score-widget{
+  right: 0;
+  left: auto;
+}
+.h5p-dir-rtl  .h5p-baq-game .timer {
+  left: 0;
+  right: auto;
+}
