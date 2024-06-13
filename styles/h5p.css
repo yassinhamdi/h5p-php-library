@@ -644,8 +644,9 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl{
   direction: rtl;
 }
-.h5p-dir-rtl .h5p-question-buttons button::before,
-.h5p-dir-rtl .questionset-results  button::before {
+/* .h5p-dir-rtl .h5p-question-buttons button::before, */
+/* .h5p-dir-rtl .questionset-results  button::before { */
+.h5p-dir-rtl button::before { 
   padding: 5px;
 }
 .h5p-dir-rtl .h5p-reuse-dialog .h5p-inner {
@@ -758,7 +759,7 @@ iframe.h5peditor-semi-fullscreen {
 
 .h5p-dir-rtl .h5p-blanks .h5p-correct:after, .h5p-dir-rtl .h5p-blanks .h5p-wrong:after{
   left: 0.5em;
-  right: auto;
+  right: auto !important;
 }
 
 .h5p-dir-rtl .h5p-blanks .h5p-correct-answer{
@@ -836,4 +837,162 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl  .h5p-baq-game .timer {
   left: 0;
   right: auto;
+}
+
+/* RTL Styles For Accordion*/
+.h5p-dir-rtl  .h5p-accordion .h5p-panel-button {
+  padding: 0.8em 2.25em 0.8em 1.25em;
+}
+.h5p-dir-rtl  .h5p-accordion .h5p-panel-button:before {
+  right: 1em;
+  left: auto;
+  transform: rotate(180deg);
+}
+
+/* RTL Styles For Image Sequencing*/
+.h5p-dir-rtl  .h5p-image-sequencing .sequencing-item{
+  float: right;
+}
+.h5p-dir-rtl  .h5p-image-sequencing  .sequencing-dropzone{
+  float: right;
+}
+.h5p-dir-rtl  .h5p-image-sequencing .sequencing-item .sequencing-mark{
+  padding-right: 0.8em;
+  padding-left: 0;
+}
+.h5p-dir-rtl .ui-tooltip{
+  text-align: right;
+}
+
+/* RTL Styles For Image Pairing*/
+.h5p-dir-rtl  .h5p-image-pair .game-container  ul,
+.h5p-dir-rtl  .h5p-image-pair .game-container  ul .h5p-image-pair-item{
+  float: right;
+}
+.h5p-dir-rtl  .h5p-image-pair .game-container {
+  direction: ltr;
+}
+
+/* RTL Styles For Dialog cards*/
+.h5p-dir-rtl  .h5p-dialogcards .h5p-dialogcards-prev {
+  right: 1em;
+  left: auto;
+  transform: rotate(180deg);
+  padding-top: 0.2em;
+}
+.h5p-dir-rtl .h5p-dialogcards .h5p-dialogcards-next {
+  left: 1em;
+  right: auto;
+  transform: rotate(180deg);
+  padding-top: 0.2em;
+}
+.h5p-dir-rtl  .h5p-dialogcards .h5p-dialogcards-prev .button-tooltip,
+.h5p-dir-rtl .h5p-dialogcards .h5p-dialogcards-next .button-tooltip{
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-dialogcards .h5p-dialogcards-retry {
+  left: 1em;
+  right: auto;
+}
+
+/* RTL Styles For Image Hotspots*/
+.h5p-dir-rtl .h5p-image-hotspots .h5p-image-hotspot-close-popup-button{
+  left: 1em;
+  right: auto;
+}
+
+/* RTL Styles For FlashCards*/
+.h5p-dir-rtl .h5p-flashcards .h5p-progress{
+  direction: ltr;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-button.h5p-next {
+  position: absolute;
+  left: 0.75em;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-button.h5p-previous {
+  position: absolute;
+  right: 0.75em;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-button.h5p-next:before {
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-button.h5p-previous:before{
+  transform: initial;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-answer .h5p-button {
+  border-radius: 2em 0em 0em 2em;
+  right: auto;
+  left: 0;
+}
+.h5p-dir-rtl .h5p-flashcards .joubel-tip-container {
+  left: 96px;
+  right: auto !important;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-answer .h5p-textinput {
+  padding: 0 1em 0 7em;
+  padding-right: 1em !important;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-answer .h5p-correct .h5p-feedback-label,
+.h5p-dir-rtl .h5p-flashcards .h5p-answer .h5p-wrong .h5p-feedback-label {
+  right: auto;
+  left: 1em;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-answer .h5p-correct .h5p-feedback-label:before,
+.h5p-dir-rtl .h5p-flashcards .h5p-answer .h5p-wrong .h5p-feedback-label:before {
+  padding-left: 4px;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-solution .h5p-rotate-in {
+  right: auto;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-show-results {
+  left: 0;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-show-results button:after {
+  margin-left: 0em;
+  float: left;
+  margin-right: 0.5em;
+  transform: rotate(180deg);
+}
+/** RTL Styles For FlashCards Results Screen **/
+.h5p-dir-rtl .h5p-flashcards .h5p-results-score {
+  right: auto;
+  left: 1em;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-results-box {
+  left: 0.5em;
+  right: auto;
+  border-radius: 1em 0em 0em 1em;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-results-image-holder {
+  float: right;
+  margin-right: 0em;
+  margin-left: 1em;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-results-answer {
+  margin-left: 4.5em;
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-results-question {
+  margin-left: 3.5em;
+}
+/* RTL Styles For FlashCards Animation */
+.h5p-dir-rtl .h5p-flashcards .h5p-card.left {
+  transform: translateX(200%);
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-card.right {
+  transform: translateX(-200%);
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-card.h5p-previous {
+  transform: translateX(100%);
+}
+.h5p-dir-rtl .h5p-flashcards .h5p-card.h5p-next {
+  transform: translateX(-100%);
+}
+.h5p-dir-rtl .h5p-flashcards.h5p-mobile .h5p-card.h5p-previous {
+  transform: translateX(150%);
+}
+.h5p-dir-rtl .h5p-flashcards.h5p-mobile .h5p-card.h5p-next {
+  transform: translateX(-150%);
 }
