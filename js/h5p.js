@@ -95,6 +95,22 @@ H5P.init = function (target) {
     var $container = H5P.jQuery('<div class="h5p-container"></div>').appendTo($element);
     var contentId = $element.data('content-id');
     var contentData = H5PIntegration.contents['cid-' + contentId];
+    var contentLanguage = contentData && contentData.metadata && contentData.metadata.defaultLanguage // language
+      ? contentData.metadata.defaultLanguage : 'en';
+    // Libraries that supports RTL
+    const activeRTLLibraries = ['H5P.TrueFalse','H5P.SingleChoiceSet','H5P.MultiChoice',
+      'H5P.MultiMediaChoice','H5P.Blanks','H5P.MarkTheWords','H5P.DragText',
+      'H5P.Essay','H5P.DragQuestion','H5P.QuestionSet','H5P.ArithmeticQuiz',
+      'H5P.Accordion','H5P.SortParagraphs','H5P.ImageSequencing','H5P.ImagePair',
+      'H5P.Dialogcards','H5P.ImageHotspotQuestion','H5P.ImageMultipleHotspotQuestion',
+      'H5P.ImageHotspots','H5P.Agamotto','H5P.Flashcards','H5P.MemoryGame','H5P.Summary',
+      'H5P.GuessTheAnswer', 'H5P.ImageSlider', 'H5P.DocumentationTool','H5P.InteractiveVideo'
+    ];
+    var mainLibrary = contentData && contentData.library; 
+    let libraryName = mainLibrary.split(' ')[0] || mainLibrary;
+    if(contentLanguage && contentLanguage == 'ar' && libraryName && activeRTLLibraries.includes(libraryName)){
+      $element.addClass('h5p-dir-rtl');
+    } 
     if (contentData === undefined) {
       return H5P.error('No data for content id ' + contentId + '. Perhaps the library is gone?');
     }
@@ -378,13 +394,10 @@ H5P.init = function (target) {
     const contentData = H5PIntegration.contents['cid-' + contentId];
     const contentLanguage = contentData && contentData.metadata && contentData.metadata.defaultLanguage
       ? contentData.metadata.defaultLanguage : 'en';
-      const contentDefaultLanguage = contentData && contentData.metadata && contentData.metadata.language
-      ? contentData.metadata.language : 'en';
-    const dirClass = ((contentLanguage && contentLanguage == 'ar') || (contentDefaultLanguage && contentDefaultLanguage == 'ar')) ? ' h5p-dir-rtl' : ''
 
     const writeDocument = function () {
       iframe.contentDocument.open();
-      iframe.contentDocument.write('<!doctype html><html class="h5p-iframe" lang="' + contentLanguage + '"><head>' + H5P.getHeadTags(contentId) + '</head><body><div class="h5p-content'+ dirClass + '" data-content-id="' + contentId + '"/></body></html>');
+      iframe.contentDocument.write('<!doctype html><html class="h5p-iframe" lang="' + contentLanguage + '"><head>' + H5P.getHeadTags(contentId) + '</head><body><div class="h5p-content" data-content-id="' + contentId + '"/></body></html>');
       iframe.contentDocument.close();
     };
 
