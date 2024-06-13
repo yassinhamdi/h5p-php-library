@@ -649,8 +649,12 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl button::before { 
   padding: 5px;
 }
-.h5p-dir-rtl .h5p-reuse-dialog .h5p-inner {
+/* .h5p-dir-rtl .h5p-reuse-dialog .h5p-inner {
   left: 0%;
+} */
+.h5p-dir-rtl .h5p-reuse-dialog,
+.h5p-dir-rtl .h5p-embed-dialog  {
+  direction: ltr;
 }
 .h5p-dir-rtl .h5p-reuse-dialog .h5p-inner #reuse-dialog-header{
   text-align: center;
@@ -1090,4 +1094,94 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl .h5p-memory-game .h5p-memory-close {
   left: 0.5em;
   right: auto;
+}
+
+/* RTL Styles For Documentation tool*/
+/* Navigation Menu */
+.h5p-dir-rtl .h5p-documentation-tool .h5p-navigation-menu .h5p-navigation-menu-entry {
+  padding: 0 3em 1em 1em;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-navigation-menu .h5p-navigation-menu-entry:before {
+  right: 20px;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-navigation-menu .h5p-navigation-menu-entry:after {
+  right: 24px;
+  left: auto;
+}
+
+.h5p-dir-rtl .h5p-documentation-tool .h5p-documentation-tool-nav-button {
+  left: 1em;
+  right: auto;
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-documentation-tool-nav-button.next:before {
+  right: 0.4em;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-documentation-tool-nav-button:before {
+  right: 0.475em;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-documentation-tool-nav-button.prev {
+  margin-left: 3em;
+  margin-right: 0em;
+}
+/* Help Text Box*/
+.h5p-dir-rtl .h5p-documentation-tool .joubel-help-text-dialog-box .joubel-help-text-header {
+  padding: 0.75em 1.5em 0.75em 3em;
+}
+.h5p-dir-rtl .h5p-documentation-tool .joubel-help-text-dialog-box .joubel-help-text-remove {
+  left: 1.5em;
+  right: auto;
+}
+/*GOALS Page*/
+.h5p-dir-rtl .h5p-documentation-tool .h5p-goals-page button.h5p-created-goal-remove {
+  left: -0.8em;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-goals-page .goals-define .goals-create:before {
+  margin-right: 0em;
+  padding: 0.5em;
+}
+/*GOALS Assessement Page*/
+.h5p-dir-rtl .h5p-documentation-tool .h5p-goals-assessment-page .legend .rating:before {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+.h5p-dir-rtl .h5p-documentation-tool .goals-assessment-view .goals-header .rating-header {
+  left: 0;
+  right: auto;
+  text-align: right
+}
+.h5p-dir-rtl .h5p-documentation-tool .goals-assessment-view .rating-container {
+  float: left;
+}
+/*Standard Page*/
+.h5p-dir-rtl .h5p-documentation-tool .h5p-text-input-field .h5p-text-input-field-message-char {
+  float: right;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-standard-page .h5p-accordion .h5p-panel-title {
+  padding: 0.2em 1em 0.2em 0em;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-standard-page .h5p-accordion .h5p-panel-button:before {
+  right: 0em;
+  left: auto;
+  padding: 0px;
+}
+.h5p-dir-rtl .h5p-documentation-tool .h5p-standard-page .h5p-accordion .h5p-panel-title .h5p-panel-button {
+  text-align: right;
+}
+/*Export Page*/
+.h5p-dir-rtl .h5p-documentation-tool .h5p-document-export-page .export-document-button:before {
+  margin-right: 0;
+  padding: 0.5em;
+}
+/*Main Content Page*/
+.h5p-dir-rtl .h5p-documentation-tool .joubel-exportable-header-text {
+  float: right;
+  margin-right: 1em;
+}
+.h5p-dir-rtl .h5p-documentation-tool .joubel-create-document .joubel-exportable-header-inner button {
+  float: left;
+  border-right: 1px solid #eee ;
+  border-left: 0px !important;
 }
