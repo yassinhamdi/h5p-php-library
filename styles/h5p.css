@@ -1185,3 +1185,45 @@ iframe.h5peditor-semi-fullscreen {
   border-right: 1px solid #eee ;
   border-left: 0px !important;
 }
+
+/* RTL Styles For Interactive Video*/
+.h5p-dir-rtl .h5p-interactive-video{
+  direction: ltr;
+}
+.h5p-dir-rtl  .h5p-interactive-video .h5p-interaction-inner,
+.h5p-dir-rtl .h5p-interactive-video .h5p-interaction-label .h5p-interaction-label-text,
+.h5p-dir-rtl .h5p-interactive-video .h5p-dialog .h5p-dialog-inner .h5p-dialog-interaction {
+  direction: rtl;
+}
+.h5p-dir-rtl .h5p-interactive-video .h5p-interaction.h5p-poster .h5p-interaction-outer {
+  overflow-x:hidden;
+}
+.h5p-dir-rtl .h5p-interactive-video .h5p-mark-the-words{
+  display: inline;
+}
+
+.h5p-dir-rtl .h5p-interactive-video .h5p-question .h5p-joubelui-button {
+  float: right;
+}
+.h5p-dir-rtl .h5p-interactive-video .h5p-interaction .h5p-interaction-inner.h5p-link:after {
+  margin-right: 0.7em;
+  margin-left: 0;
+}
+.h5p-dir-rtl .h5p-interactive-video .h5p-dialog-close{
+  left: 0.5em;
+  right: auto;
+}
+/* Interactive Video EndScreen */
+.h5p-dir-rtl .h5p-interactive-video .h5p-interactive-video-endscreen{
+  direction: rtl;
+}
+.h5p-dir-rtl .h5p-interactive-video .h5p-interactive-video-endscreen-introduction-container,
+.h5p-dir-rtl .h5p-interactive-video .h5p-interactive-video-endscreen-overview-title-score,
+.h5p-dir-rtl .h5p-interactive-video .h5p-interactive-video-endscreen-overview-table-row-title,
+.h5p-dir-rtl .h5p-interactive-video .h5p-interactive-video-endscreen-overview-title-answered-questions {
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-interactive-video .h5p-interactive-video-endscreen-overview-table-row-score {
+  text-align: left;
+  direction: ltr;
+}
