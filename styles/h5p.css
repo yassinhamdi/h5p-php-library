@@ -996,3 +996,98 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl .h5p-flashcards.h5p-mobile .h5p-card.h5p-next {
   transform: translateX(-150%);
 }
+
+/* RTL Styles For Summary*/
+.h5p-dir-rtl .h5p-summary .summary-evaluation-content {
+  padding: 0.1em 0em 0.1em 2em;
+  float: right;
+}
+.h5p-dir-rtl .h5p-summary .summary-evaluation .joubel-tip-container {
+  left: 0;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-summary .summary-progress-numeric {
+  float: left;
+  margin-right: 0.3em;
+}
+.h5p-dir-rtl .h5p-summary .summary-progress-numeric:before {
+  float: right;
+  margin-left: 0.3em;
+  margin-right: 0em;
+}
+.h5p-dir-rtl .h5p-summary .summary-score,
+.h5p-dir-rtl .h5p-summary li.summary-failed:before,
+.h5p-dir-rtl .h5p-summary .summary-container li:before {
+  float: left;
+}
+.h5p-dir-rtl .h5p-summary .summary-score:before {
+  float: right;
+  margin-left: 0.3em;
+  margin-right: 0em;
+}
+
+/* RTL Styles For Image Slider*/
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-right-button{
+  left: 0;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-right-button .h5p-image-slider-button-text {
+  left: calc(20% - 0.2em);
+  right: auto;
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-left-button {
+  right: 0;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-left-button .h5p-image-slider-button-text {
+  right: calc(20% - 0.2em);
+  left: auto;
+  transform: rotate(180deg);
+}
+/* RTL Styles For Image Slider Animation */
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slide-holder {
+  float: right;
+  margin-right: -100%;
+  margin-left: auto;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slide-holder:first-child {
+  margin-right: 0;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slide-holder.h5p-image-slider-current {
+  transition: right 0.32s;
+  left: auto;
+  right: 0;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-future {
+  transition: right 0.35s;
+  right: 100.1%;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-future .h5p-image-slider-no-transition {
+  right: 100.0%;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-past {
+  transition: right 0.35s;
+  right: -100.1%;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-image-slider .h5p-image-slider-past .h5p-image-slider-no-transition {
+  right: -100.0%;
+  left: auto;
+}
+
+/* RTL Styles For Memory Game*/
+.h5p-dir-rtl .h5p-memory-game .h5p-memory-wrap{
+  float: right;
+}
+.h5p-dir-rtl .h5p-memory-game .h5p-status > dt {
+  float: right;
+  margin: 0 0 0 1em;
+}
+.h5p-dir-rtl .h5p-memory-game .h5p-status {
+  clear: right;
+}
+.h5p-dir-rtl .h5p-memory-game .h5p-memory-close {
+  left: 0.5em;
+  right: auto;
+}
