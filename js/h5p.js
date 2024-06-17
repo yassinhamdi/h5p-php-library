@@ -104,7 +104,8 @@ H5P.init = function (target) {
       'H5P.Accordion','H5P.SortParagraphs','H5P.ImageSequencing','H5P.ImagePair',
       'H5P.Dialogcards','H5P.ImageHotspotQuestion','H5P.ImageMultipleHotspotQuestion',
       'H5P.ImageHotspots','H5P.Agamotto','H5P.Flashcards','H5P.MemoryGame','H5P.Summary',
-      'H5P.GuessTheAnswer', 'H5P.ImageSlider', 'H5P.DocumentationTool','H5P.InteractiveVideo'
+      'H5P.GuessTheAnswer', 'H5P.ImageSlider', 'H5P.DocumentationTool','H5P.InteractiveVideo',
+      'H5P.CoursePresentation'
     ];
     var mainLibrary = contentData && contentData.library; 
     let libraryName = mainLibrary.split(' ')[0] || mainLibrary;
