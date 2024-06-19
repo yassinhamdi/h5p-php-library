@@ -720,6 +720,12 @@ iframe.h5peditor-semi-fullscreen {
   right: 0;
   left: auto;
 }
+.h5p-dir-rtl .h5p-single-choice-set .h5p-ssc-next-button{
+  left: 0.5em;
+  right: auto;
+  line-height: 1.2em !important;
+  transform: rotate(180deg);
+}
 
 /* RTL Styles For Multiple Choice Question */
 .h5p-dir-rtl .h5p-multichoice .h5p-alternative-container{
@@ -1291,4 +1297,41 @@ iframe.h5peditor-semi-fullscreen {
 
 .h5p-dir-rtl .h5p-course-presentation .h5p-interactive-video .h5p-controls {
   text-align: left;
+}
+
+/* RTL Styles For TimeLine */
+.h5p-dir-rtl .h5p-timeline .vco-slider .nav-next {
+  left: 0px !important;
+}
+.h5p-dir-rtl .h5p-timeline .vco-slider .slider-item .content .content-container .text .container,
+.h5p-dir-rtl .h5p-timeline .vco-slider .slider-item .content .content-container.layout-text .text .container {
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-timeline .vco-slider .slider-item .content .content-container .text {
+  padding: 0px 0.5em;
+}
+.h5p-dir-rtl .h5p-timeline .vco-slider .slider-item .content .content-container .media .media-wrapper .media-container .caption{
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-timeline .vco-slider .nav-previous .icon{
+  margin-right: 6px;
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-timeline .vco-slider .nav-next .icon{
+  margin-right: 70px;
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-timeline .vco-slider .nav-previous .date,
+.h5p-dir-rtl .h5p-timeline .vco-slider .nav-previous .title {
+  text-align: right;
+  padding-right: 15px;
+}
+/* Timenav Flag */
+.h5p-dir-rtl .h5p-timeline .vco-timeline .vco-navigation .timenav .content .marker .flag .flag-content .thumbnail,
+.h5p-dir-rtl .h5p-timeline .vco-timeline .vco-navigation .timenav .content .marker .flag-small .flag-content .thumbnail{
+  margin-left: 3px;
+  margin-right: 0px;
+}
+.h5p-dir-rtl .h5p-timeline .vco-storyjs .thumbnail{
+  float: right;
 }
