@@ -1335,3 +1335,85 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl .h5p-timeline .vco-storyjs .thumbnail{
   float: right;
 }
+
+/* RTL Styles For Interactive Book */
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-status .h5p-interactive-book-status-arrow .navigation-button {
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-status .h5p-interactive-book-status-progress-wrapper {
+  margin-left: 2em;
+  direction: ltr;
+}
+
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-menu-button .h5p-interactive-book-summary-text {
+  text-align: right;
+  margin-right: 0.75rem;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-menu-button .h5p-interactive-book-summary-menu-button-arrow {
+  left: 25px;
+  right: auto;
+  transform: rotate(-90deg);
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-menu-button:hover .h5p-interactive-book-summary-menu-button-arrow {
+  transform: rotate(-90deg) translateY(-10px);
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-navigation-maintitle .navigation-title {
+  padding-right: 1.25em;
+  padding-left: 0em;
+}
+
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-navigation-chapter-button .h5p-interactive-book-navigation-chapter-progress {
+  left: 15px;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-navigation-chapter-button .h5p-interactive-book-navigation-chapter-accordion {
+  right: 15px;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-navigation-chapter-button .icon-collapsed {
+  transform: rotate(180deg);
+}
+
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-status .h5p-interactive-book-status-to-top .navigation-button {
+  transform: none;
+}
+
+/* Summary page */
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-buttons .h5p-interactive-book-summary-button .icon-restart,
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-buttons .h5p-interactive-book-summary-button .icon-paper-pencil {
+  margin-left: 0.5rem;
+  margin-right: 0em;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-dropdown button .icon-expanded {
+  margin-right: auto;
+  margin-left: 0em;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-dropdown[active] button {
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page ol, 
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page ul, 
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page li {
+  padding-right: 0;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section {
+  padding-right: 1.25rem !important;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section h4 span[class^=icon-]{
+  margin-right: auto;
+  margin-left: 0rem;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section-score-header div {
+  margin-right: auto;
+  margin-left: 0rem;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section-details .h5p-interactive-book-summary-section-title {
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-section-icon {
+  margin-left: 0.6125rem;
+  margin-right: 0em;
+}
+.h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section-details .h5p-interactive-book-summary-section-score{
+  direction: ltr;
+}
