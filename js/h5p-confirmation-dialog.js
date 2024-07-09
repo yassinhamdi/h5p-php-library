@@ -77,6 +77,8 @@ H5P.ConfirmationDialog = (function (EventDispatcher) {
     // Create outer popup
     var popup = document.createElement('div');
     popup.classList.add('h5p-confirmation-dialog-popup', 'hidden');
+    const language = window?.H5PEditor?.contentLanguage
+    if(language && language == 'ar') popup.classList.add('h5peditor-rtl');
     if (options.classes) {
       options.classes.forEach(function (popupClass) {
         popup.classList.add(popupClass);
