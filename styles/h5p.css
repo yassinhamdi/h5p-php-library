@@ -1420,3 +1420,258 @@ iframe.h5peditor-semi-fullscreen {
 .h5p-dir-rtl .h5p-interactive-book .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section-details .h5p-interactive-book-summary-section-score{
   direction: ltr;
 }
+
+/* Branching Scenario */
+.h5p-dir-rtl .h5p-branching-scenario .h5p-start-button:after {
+  content: "\f177";
+  margin-right: 10px;
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-screen-footer {
+  left: 0;
+  right: auto;
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-screen-footer .h5p-nav-button:after {
+  content: "\f100";
+  margin-right: 10px;
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-nav-button {
+  margin: 0.67em 0px 0px 20px;
+}
+.h5p-dir-rtl .h5p-branching-scenario  button.h5p-branching-full-screen {
+  margin: 1em 0.3em 1em 1em;
+  float: right;
+}
+.h5p-dir-rtl .h5p-branching-question-icon {
+  right: 10px;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-branching-question-title {
+  margin-left: 0em; 
+  margin-right: 1.2em;
+}
+.h5p-dir-rtl .h5p-branching-question-title  p{
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-branching-question-alternative::after {
+  right: 1em;
+  content: '\f060';
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-end-button:before {
+  padding-left: 10px;
+}
+/* Branching Scenario Navigation */
+@keyframes slide-out-reverse {
+  from { transform: translateX(0%); }
+  to { transform: translateX(100%); }
+}
+@-webkit-keyframes slide-out-reverse {
+  from { -webkit-transform: translateX(0%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+.h5p-dir-rtl .h5p-branching-scenario .h5p-previous {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+}
+
+.h5p-dir-rtl .h5p-branching-scenario .h5p-next {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-current-screen.h5p-slide-out {
+  animation: slide-out-reverse 0.8s forwards;
+  -webkit-animation: slide-out-reverse 0.8s forwards;
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-next-screen {
+  transform: translateX(-100%) !important;
+  -webkit-transform: translateX(-100%) !important;
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-library-wrapper.h5p-slide-out {
+  animation: slide-out-reverse 0.8s forwards;
+  -webkit-animation: slide-out-reverse 0.8s forwards;
+}
+.h5p-dir-rtl .h5p-branching-scenario .h5p-branching-question-wrapper.h5p-slide-out {
+  animation: slide-out-reverse 0.8s forwards;
+  -webkit-animation: slide-out-reverse 0.8s forwards;
+}
+
+/* Personality Quiz */
+.h5p-dir-rtl .h5p-personality-quiz .h5p-personality-quiz-progress-text{
+  direction: ltr;
+  text-align: end;
+  margin-right: 1em;
+}
+.h5p-dir-rtl .h5p-personality-quiz .h5p-personality-quiz-column{
+  float: right;
+}
+.h5p-dir-rtl .h5p-personality-quiz .h5p-personality-quiz-personality h2,
+.h5p-dir-rtl .h5p-personality-quiz .h5p-personality-quiz-personality p{
+  text-align: right;
+}
+
+/* Buttton Animation */
+@keyframes button-fill-rtl {
+  from  { background-position: 0%; color: rgb(60, 62, 64);}
+  to { background-position: 100%; color: rgb(233, 239, 247);}
+}
+.h5p-dir-rtl .h5p-personality-quiz .h5p-personality-quiz-button-animate {
+  animation-duration: 0.9s;
+  animation-name: button-fill-rtl;
+  animation-fill-mode: forwards;
+}
+
+/* Image Juxtaposition */ 
+.h5p-dir-rtl .h5p-image-juxtaposition .h5p-image-juxtaposition-task-description{
+  margin-right: 16px;
+}
+
+/* Speak the words set*/
+.h5p-dir-rtl .h5p-speak-the-words-set .h5p-question-next,
+.h5p-dir-rtl .h5p-speak-the-words-set .h5p-question-previous,
+.h5p-dir-rtl .h5p-speak-the-words-set .h5p-question-finish {
+  float: left;
+}
+.h5p-dir-rtl .h5p-speak-the-words-set .h5p-question-next:before {
+  content: "\f053";
+  right: 2px;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-speak-the-words-set .h5p-question-previous:before {
+  content: "\f054";
+  right: -2px;
+  left: auto;
+}
+
+/* Dictation */
+.h5p-dir-rtl .h5p-dictation .h5p-dictation-audio-wrapper {
+  float: right;
+  margin: 0;
+  margin-left: 0.25em;
+}
+.h5p-dir-rtl .h5p-dictation .h5p-audio-minimal-button{
+  transform: rotate(180deg);
+}
+.h5p-dir-rtl .h5p-dictation .h5p-answer-typo {
+  display: inline-block;
+  margin-left: 4px;
+}
+.h5p-dir-rtl .h5p-dictation .h5p-solution-container {
+  right: 0.25em;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-dictation .h5p-solution-text{
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+.h5p-dir-rtl .h5p-dictation .h5p-wrapper-match,
+.h5p-dir-rtl .h5p-dictation .h5p-wrapper-wrong,
+.h5p-dir-rtl .h5p-dictation .h5p-wrapper-missing{
+  flex: auto;
+}
+ 
+/* Info Wall */
+.h5p-dir-rtl .h5p-info-wall-titlebar .h5p-info-wall-searchbox-icon::before {
+  right: 1.5em;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-info-wall-titlebar .h5p-info-wall-searchbox {
+  padding: 0.25em 2em 0.25em 0.4em;
+}
+
+/* Find Words */
+.h5p-dir-rtl .h5p-find-the-words em::before {
+  margin-right: auto;
+  margin-left: 8px;
+}
+.h5p-dir-rtl .h5p-find-the-words .vocabulary-container ul {
+  padding-right: 8px;
+}
+.h5p-dir-rtl .h5p-find-the-words .vocabulary-container li {
+  text-align: right;
+}
+
+/* Crosswords */
+.h5p-dir-rtl .h5p-crossword .h5p-crossword-input-fields-group-solution-container {
+  right: 0.25em;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-crossword .h5p-crossword-input-fields-group-solution-inner {
+  text-align: right;
+}
+@media screen and (min-width: 46.25em){
+  .h5p-dir-rtl .h5p-crossword .h5p-crossword-table-wrapper {
+      margin-left: 1em;
+      margin-right: 0em;
+  }
+}
+
+/* Advent Calendar */
+.h5p-dir-rtl .h5p-advent-calendar-square-content .h5p-advent-calendar-door-container .h5p-advent-calendar-doorway .h5p-advent-calendar-door.h5p-advent-calendar-left {
+  align-items: flex-start;
+}
+.h5p-dir-rtl .h5p-advent-calendar-square-content .h5p-advent-calendar-door-container .h5p-advent-calendar-doorway .h5p-advent-calendar-door.h5p-advent-calendar-right {
+  align-items: flex-end;
+}
+.h5p-dir-rtl .h5p-advent-calendar-overlay-outer-wrapper .h5p-advent-calendar-overlay-button-close {
+  left: -1.1em;
+  right: auto;
+}
+
+/* Virtual Tour */
+.h5p-dir-rtl .nav-label-container .nav-label .nav-label-inner {
+  text-align: right;
+}
+.h5p-dir-rtl .h5p-text-dialog .close-button-wrapper {
+  left: -1em;
+  right: auto;
+}
+
+/* Game MAP */
+.h5p-dir-rtl .status-container::before {
+  margin-left: 0.5rem;
+  margin-right: auto;
+}
+.h5p-dir-rtl .status-container .status-container-values {
+  direction: ltr;
+}
+.h5p-dir-rtl .h5p-game-map-exercise .h5p-game-map-exercise-content-container .h5p-game-map-exercise-content {
+  margin-right: calc(var(--exercise-screen-offset, 4rem)/2);
+  margin-left: 0em;
+}
+.h5p-dir-rtl .h5p-game-map-exercise .h5p-game-map-exercise-content-container .h5p-game-map-exercise-button-close {
+  right: calc((var(--exercise-screen-offset, 4rem) - 2rem)/-2 - 0.25rem);
+  left: auto;
+}
+
+/* Questionnaire */
+.h5p-dir-rtl .h5p-questionnaire-element .h5p-subcontent-question {
+  padding: 1.5em 1em 1.5em 5em;
+}
+.h5p-dir-rtl .h5p-questionnaire-progress-bar-widget {
+  right:auto;
+  left: 1em;
+  direction: ltr;
+}
+.h5p-dir-rtl .h5p-simple-multiple-choice-question:before,
+.h5p-dir-rtl .h5p-open-ended-question-question:before {
+  right: 1em;
+  left: auto;
+}
+.h5p-dir-rtl .h5p-questionnaire-footer .h5p-questionnaire-button.next {
+  float: left;
+}
+.h5p-dir-rtl .h5p-questionnaire-footer .h5p-questionnaire-button.previous {
+  float: right;
+}
+.h5p-dir-rtl .h5p-questionnaire-button.previous:before, .h5p-dir-rtl .h5p-questionnaire-button.next:after {
+  margin-right: 0.5em;
+}
+.h5p-dir-rtl .h5p-questionnaire-submit-screen .h5p-questionnaire-button.previous {
+  margin-left: 0.5em;
+}
+.h5p-dir-rtl .h5p-questionnaire-button.next:after {
+  content: "\f137";
+}
+.h5p-dir-rtl .h5p-questionnaire-button.previous:before {
+  content: "\f138";
+}

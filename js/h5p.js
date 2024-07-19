@@ -105,7 +105,10 @@ H5P.init = function (target) {
       'H5P.Dialogcards','H5P.ImageHotspotQuestion','H5P.ImageMultipleHotspotQuestion',
       'H5P.ImageHotspots','H5P.Agamotto','H5P.Flashcards','H5P.MemoryGame','H5P.Summary',
       'H5P.GuessTheAnswer', 'H5P.ImageSlider', 'H5P.DocumentationTool','H5P.InteractiveVideo',
-      'H5P.CoursePresentation','H5P.Timeline','H5P.Column', 'H5P.InteractiveBook'
+      'H5P.CoursePresentation','H5P.Timeline','H5P.Column', 'H5P.InteractiveBook','H5P.PersonalityQuiz',
+      'H5P.BranchingScenario','H5P.Collage','H5P.ImageJuxtaposition','H5P.SpeakTheWords','H5P.Dictation',
+      'H5P.SpeakTheWordsSet','H5P.Cornell','H5P.InfoWall','H5P.FindTheWords', 'H5P.StructureStrip',
+      'H5P.Crossword','H5P.AdventCalendar','H5P.ThreeImage','H5P.GameMap','H5P.KewArCode','H5P.Questionnaire'
     ];
     var mainLibrary = contentData && contentData.library; 
     let libraryName = mainLibrary.split(' ')[0] || mainLibrary;
